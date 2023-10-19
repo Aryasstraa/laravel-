@@ -30,3 +30,7 @@ Route::get('/khs/{par1}/{par2}',[CobaController::class,'index'])->where(['par1'=
 Route::get('/master', function () {
     return view ('coba');
 });
+
+Route::get('/master2', function () {
+    return view ('master2.layoutadminlte');
+});
