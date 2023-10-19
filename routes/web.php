@@ -25,3 +25,8 @@ Route::get('/krs/{kode}/detail', function ($kode) {
 
 use App\Http\Controllers\CobaController;
 Route::get('/khs/{par1}/{par2}',[CobaController::class,'index'])->where(['par1'=>'[0-9]+','par2' => '[0-9]+']);
+
+// folder master
+Route::get('/master', function () {
+    return view ('coba');
+});
